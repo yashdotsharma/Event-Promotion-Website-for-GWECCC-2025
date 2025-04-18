@@ -1,0 +1,601 @@
+/* Import Google Fonts for a modern, professional look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    color: #1A2526;
+    background-color: #FFFFFF;
+}
+
+/* Header */
+header {
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.logo, .partner-logo {
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover, .partner-logo:hover {
+    transform: scale(1.1);
+}
+
+.organised-by {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1A2526;
+    margin-right: 20px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #1A2526 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #00A3E0 !important;
+    transform: translateY(-2px);
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scale(1);
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 12px;
+    text-align: left;
+    width: 60%;
+    max-width: 600px;
+}
+
+.slide-text p {
+    color: #FFFFFF;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.slide.active .slide-text p {
+    animation: textSlideUp 0.6s ease-in-out forwards;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    opacity: 0.8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.dot.active, .dot:hover {
+    opacity: 1;
+    background: #F4C430;
+}
+
+/* About Section */
+.about {
+    background: #FFFFFF;
+}
+
+.about h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1A2526;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #4B5563;
+    margin-bottom: 30px;
+}
+
+.about-image img {
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Schedule Section */
+.schedule {
+    background: #F8FAFC;
+}
+
+.schedule h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1A2526;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+}
+
+.schedule-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.schedule-card h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1A2526;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+}
+
+.schedule-card .meta {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6B7280;
+    margin-bottom: 15px;
+}
+
+.schedule-card .meta span {
+    margin-right: 25px;
+}
+
+.schedule-card p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #4B5563;
+}
+
+.schedule-card .speaker {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1A2526;
+}
+
+/* Countdown Section */
+.countdown {
+    background: #FFFFFF;
+    padding: 100px 0;
+}
+
+.countdown h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1A2526;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.timer-box {
+    background: linear-gradient(135deg, #003087, #00A3E0);
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timer-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.timer-value {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    animation: pulseTimer 2s ease-in-out infinite;
+}
+
+.timer-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #F4C430;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#event-status {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #F4C430;
+    letter-spacing: 1.5px;
+}
+
+/* Registration Form */
+.register {
+    background: #FFFFFF;
+}
+
+.register h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1A2526;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+}
+
+.form-control {
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #003087;
+    box-shadow: 0 0 8px rgba(0, 48, 135, 0.2);
+}
+
+.btn-primary {
+    background: #003087;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #00A3E0;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: #1A2526;
+}
+
+.footer h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #F4C430;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+}
+
+.footer p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.footer .social-links a {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #00A3E0;
+    transform: scale(1.2);
+}
+
+.footer-logo img {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+/* Custom Animations */
+@keyframes textSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 48, 135, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 48, 135, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 48, 135, 0.4);
+    }
+}
+
+@keyframes pulseTimer {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply custom animations */
+.about-image img {
+    animation: scaleIn 0.7s ease-in-out forwards;
+}
+
+.btn-primary:hover {
+    animation: pulse 0.8s ease-in-out;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .animate__animated,
+    .slide,
+    .slide-text p,
+    .schedule-card,
+    .btn-primary,
+    .about-image img,
+    .footer .social-links a,
+    .footer-logo img,
+    .timer-box,
+    .timer-value {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .logo, .partner-logo {
+        height: 60px;
+    }
+
+    .organised-by {
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .banner {
+        height: 500px;
+    }
+
+    .slide-text {
+        padding: 15px 25px;
+        left: 10px;
+        width: 80%;
+    }
+
+    .slide-text p {
+        font-size: 2rem;
+    }
+
+    .about h2, .schedule h2, .register h2, .countdown h2 {
+        font-size: 2.8rem;
+    }
+
+    .schedule-card h3 {
+        font-size: 2rem;
+    }
+
+    .schedule-card .meta {
+        font-size: 0.9rem;
+    }
+
+    .schedule-card p {
+        font-size: 1rem;
+    }
+
+    .schedule-card .speaker {
+        font-size: 1rem;
+    }
+
+    .timer-box {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .timer-value {
+        font-size: 2.5rem;
+    }
+
+    .timer-label {
+        font-size: 1rem;
+    }
+
+    .form-control {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1.1rem;
+    }
+
+    .footer h4 {
+        font-size: 1.6rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer-logo img {
+        max-width: 150px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    #event-status {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+
+    .slide-text {
+        padding: 10px 15px;
+        left: 10px;
+        width: 90%;
+    }
+
+    .slide-text p {
+        font-size: 1.6rem;
+    }
+
+    .about h2, .schedule h2, .register h2, .countdown h2 {
+        font-size: 2.2rem;
+    }
+
+    .schedule-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .schedule-card .meta {
+        font-size: 0.85rem;
+    }
+
+    .schedule-card p {
+        font-size: 0.9rem;
+    }
+
+    .schedule-card .speaker {
+        font-size: 0.9rem;
+    }
+
+    .timer-box {
+        padding: 15px;
+    }
+
+    .timer-value {
+        font-size: 2rem;
+    }
+
+    .timer-label {
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+
+    #event-status {
+        font-size: 1.2rem;
+    }
+}

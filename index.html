@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWECCC 2025 - Event Promotion</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/GWECCC Head Logo.jpeg">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css for animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/GWECCC Logo.jpeg" alt="GWECCC 2025 Logo" class="logo animate__animated animate__fadeIn">
+                </a>
+                <div class="d-flex align-items-center">
+                    <h3 class="organised-by animate__animated animate__fadeIn">Organised By</h3>
+                    <img src="assets/images/Nexus Logo.png" alt="Partner Logo" class="partner-logo animate__animated animate__fadeIn">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link animate__animated animate__fadeIn" data-animate="fadeIn" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link animate__animated animate__fadeIn" data-animate="fadeIn" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link animate__animated animate__fadeIn" data-animate="fadeIn" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link animate__animated animate__fadeIn" data-animate="fadeIn" href="#register">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="slider">
+            <div class="slide active">
+                <img src="assets/images/banner1.jpg" alt="GWECCC 2025 Slide 1" class="animate__animated">
+                <div class="slide-text">
+                    <p class="animate__animated">9 - 11 September 2025 | Sanad, Kingdom of Bahrain</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/images/banner2.jpg" alt="GWECCC 2025 Slide 2" class="animate__animated">
+                <div class="slide-text">
+                    <p class="animate__animated">9 - 11 September 2025 | Sanad, Kingdom of Bahrain</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/images/banner3.jpg" alt="GWECCC 2025 Slide 3" class="animate__animated">
+                <div class="slide-text">
+                    <p class="animate__animated">9 - 11 September 2025 | Sanad, Kingdom of Bahrain</p>
+                </div>
+            </div>
+            <!-- Navigation Dots -->
+            <div class="slider-nav">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated" data-animate="fadeInUp">About GWECCC 2025</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 about-text animate__animated" data-animate="fadeInLeft">
+                    <p>Global Water, Energy and Climate Change Congress is a water & energy centric event that will mainly address the concerns that are faced by natural resources due to heavy consumption in major industries & the impacts of climate change. It will be organised as the ultimate platform for addressing sustainable development & integrated management of water & energy resources and promoting regional & international strategy-related programmes & projects which address the challenges faced by the sector, in maintaining and flourishing its resources.</p>
+                    <p>GWECCC will include a showcase of advanced technologies, innovations and bring together global leaders, experts, and policymakers to exchange experiences, best practices, and explore opportunities that exist in the current scenario, that can support & sustain water resources and mitigate scarcity & preservation concerns.</p>
+                </div>
+                <div class="col-lg-6 about-image text-center animate__animated" data-animate="fadeInRight">
+                    <img src="assets/images/about-banner.png" alt="GWECCC 2025 About Banner" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Schedule -->
+    <section id="schedule" class="schedule py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated" data-animate="fadeInUp">Event Schedule</h2>
+            <div class="timeline">
+                <div class="schedule-card card mb-4 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.1s;">
+                    <div class="card-body">
+                        <h3 class="card-title">Keynote Address</h3>
+                        <div class="meta">
+                            <span>9 September 2025</span>
+                            <span>9:00 AM - 10:30 AM</span>
+                            <span>Main Hall</span>
+                        </div>
+                        <p class="speaker">Speaker: Dr. Jane Smith</p>
+                        <p>Join us for an inspiring keynote on the future of global collaboration, exploring innovative strategies for sustainable growth.</p>
+                    </div>
+                </div>
+                <div class="schedule-card card mb-4 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="card-body">
+                        <h3 class="card-title">Panel Discussion: Topic A</h3>
+                        <div class="meta">
+                            <span>10 September 2025</span>
+                            <span>11:00 AM - 12:30 PM</span>
+                            <span>Conference Room A</span>
+                        </div>
+                        <p class="speaker">Speakers: John Doe, Sarah Lee</p>
+                        <p>A deep dive into emerging trends in technology and their impact on international partnerships.</p>
+                    </div>
+                </div>
+                <div class="schedule-card card mb-4 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.3s;">
+                    <div class="card-body">
+                        <h3 class="card-title">Workshop: Innovation Lab</h3>
+                        <div class="meta">
+                            <span>10 September 2025</span>
+                            <span>2:00 PM - 4:00 PM</span>
+                            <span>Lab B</span>
+                        </div>
+                        <p class="speaker">Facilitator: Prof. Ahmed Khan</p>
+                        <p>Hands-on session to develop practical solutions for real-world challenges in a collaborative setting.</p>
+                    </div>
+                </div>
+                <div class="schedule-card card mb-4 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="card-body">
+                        <h3 class="card-title">Closing Remarks</h3>
+                        <div class="meta">
+                            <span>11 September 2025</span>
+                            <span>3:00 PM - 4:00 PM</span>
+                            <span>Main Hall</span>
+                        </div>
+                        <p class="speaker">Speaker: Maria Gonzalez</p>
+                        <p>Reflect on the key takeaways from GWECCC 2025 and look ahead to future opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer Section -->
+    <section id="countdown" class="countdown py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated" data-animate="fadeInUp">Countdown to GWECCC 2025</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-3 text-center timer-box animate__animated" data-animate="bounceIn" style="animation-delay: 0.1s;">
+                    <div class="timer-value" id="days">00</div>
+                    <div class="timer-label">Days</div>
+                </div>
+                <div class="col-12 col-md-3 text-center timer-box animate__animated" data-animate="bounceIn" style="animation-delay: 0.2s;">
+                    <div class="timer-value" id="hours">00</div>
+                    <div class="timer-label">Hours</div>
+                </div>
+                <div class="col-12 col-md-3 text-center timer-box animate__animated" data-animate="bounceIn" style="animation-delay: 0.3s;">
+                    <div class="timer-value" id="minutes">00</div>
+                    <div class="timer-label">Minutes</div>
+                </div>
+                <div class="col-12 col-md-3 text-center timer-box animate__animated" data-animate="bounceIn" style="animation-delay: 0.4s;">
+                    <div class="timer-value" id="seconds">00</div>
+                    <div class="timer-label">Seconds</div>
+                </div>
+            </div>
+            <div class="text-center mt-4" id="event-status"></div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="register py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated" data-animate="fadeInUp">Register Now</h2>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.1s;">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="mb-3 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.2s;">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.3s;">
+                    <input type="tel" class="form-control" placeholder="Contact No." required>
+                </div>
+                <div class="mb-3 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.4s;">
+                    <input type="text" class="form-control" placeholder="Organization" required>
+                </div>
+                <div class="mb-3 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.5s;">
+                    <input type="number" class="form-control" placeholder="No. of Delegates" min="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 animate__animated" data-animate="fadeInUp" style="animation-delay: 0.6s;">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 footer-info animate__animated" data-animate="fadeInUp">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@gweccc2025.com</p>
+                    <p>Phone: +973 1700 9988</p>
+                    <p>Join us for the Global Water, Energy and Climate Change Congress 2025 to explore sustainable solutions.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 footer-address animate__animated" data-animate="fadeInUp" style="animation-delay: 0.1s;">
+                    <h4>Corporate Address</h4>
+                    <p>Office No. 11, Building 1978, Road 4563, Block 745, Sanad, Kingdom of Bahrain</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 footer-social animate__animated" data-animate="fadeInUp" style="animation-delay: 0.2s;">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/nexusgroupHQ" target="_blank" class="me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/nexusgroupbh" target="_blank" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/nexusgroup_bh" target="_blank" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nexusgroup_bh" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 footer-logo text-center animate__animated" data-animate="fadeInUp" style="animation-delay: 0.3s;">
+                    <img src="assets/images/GWECCC Logo.jpeg" alt="GWECCC 2025 Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-4">
+                <p>© 2025 GWECCC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
