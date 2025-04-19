@@ -21,11 +21,24 @@ header {
 }
 
 .navbar {
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
-.logo, .partner-logo {
+.logos{
+    display: flex;
+}
+
+.logo {
+    height: 120px;
+    width: fit-content;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo {
     height: 80px;
+    width: fit-content;
+    margin-right: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -34,15 +47,15 @@ header {
 }
 
 .organised-by {
-    font-size: 1.6rem;
+    font-size: 25px;
     font-weight: 600;
     color: #1A2526;
-    margin-right: 20px;
+    /* margin-left: 20px; */
 }
 
 .nav-link {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: #1A2526 !important;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -456,7 +469,7 @@ header {
     }
 
     .organised-by {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         margin: 10px 0;
     }
 
@@ -541,6 +554,29 @@ header {
 }
 
 @media (max-width: 480px) {
+    .navbar-toggler{
+        font-size: 1rem;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .logos{
+        display: inline;
+    }
+
+    /* .logo{
+        height: 60px;
+    }
+
+    .partner-logo{
+        height: 40px;
+    }
+
+    .organised-by{
+        font-size: 14px;
+    } */
+
     .banner {
         height: 400px;
     }
