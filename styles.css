@@ -362,7 +362,7 @@ header {
 }
 
 .footer-logo img {
-    max-width: 200px;
+    max-width: 350px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -465,24 +465,26 @@ header {
         justify-content: right;
         align-items: right;
     }
-
-    .logos{
-        display: inline;
-    }
     
     .navbar {
         padding: 10px 20px;
     }
+    
+   .logos{
+        display: inline;
+    }
 
-    .logo {
+   .logo{
         height: 80px;
     }
-.partner-logo{
-        height: 60px;
+    .partner-logo{
+        height: 30px;
     }
-    .organised-by {
-        font-size: 1.1rem;
-        margin: 10px 0;
+
+    .organised-by{
+        padding-top: 8px;
+        text-align: left;
+        font-size: 10px;
     }
 
     .nav-link {
@@ -553,7 +555,7 @@ header {
     }
 
     .footer-logo img {
-        max-width: 150px;
+        max-width: 250px;
     }
 
     .container {
@@ -573,6 +575,10 @@ header {
         align-items: right;
     }
 
+    .navbar {
+        padding: 10px 20px;
+    }
+
     .logos{
         display: inline;
     }
@@ -581,8 +587,15 @@ header {
         height: 80px;
     }
     .partner-logo{
-        height: 60px;
+        height: 30px;
     }
+
+    .organised-by{
+        padding-top: 8px;
+        text-align: left;
+        font-size: 10px;
+    }
+
     .banner {
         height: 400px;
     }
