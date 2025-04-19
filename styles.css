@@ -458,14 +458,28 @@ header {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+     .navbar-toggler{
+        font-size: 1rem;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .logos{
+        display: inline;
+    }
+    
     .navbar {
         padding: 10px 20px;
     }
 
-    .logo, .partner-logo {
+    .logo {
+        height: 80px;
+    }
+.partner-logo{
         height: 60px;
     }
-
     .organised-by {
         font-size: 1.1rem;
         margin: 10px 0;
@@ -563,7 +577,10 @@ header {
         display: inline;
     }
 
-   .logo, .partner-logo{
+   .logo{
+        height: 80px;
+    }
+    .partner-logo{
         height: 60px;
     }
     .banner {
