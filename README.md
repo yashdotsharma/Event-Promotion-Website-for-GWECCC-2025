@@ -26,3 +26,15 @@ Web Browser: Chrome, Firefox, or Safari for testing.
 GitHub Account: For deployment on GitHub Pages.
 
 Text Editor: VS Code or similar for editing files.
+
+
+Run Locally:
+
+Open index.html in a web browser (e.g., double-click or use a local server).
+
+
+Troubleshooting:
+
+404 Error: Ensure index.html is in the root and GitHub Pages is set to the main branch.
+
+Broken Images/CSS/JS: Verify relative paths (e.g., assets/images/GWECCC Logo.jpeg).
