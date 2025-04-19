@@ -563,18 +563,9 @@ header {
         display: inline;
     }
 
-    /* .logo{
+   .logo, .partner-logo{
         height: 60px;
     }
-
-    .partner-logo{
-        height: 40px;
-    }
-
-    .organised-by{
-        font-size: 14px;
-    } */
-
     .banner {
         height: 400px;
     }
