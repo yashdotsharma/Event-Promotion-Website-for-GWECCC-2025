@@ -19,8 +19,6 @@ Version Control: Git with clear commit history.
 
 Prerequisites:
 
-Git: For cloning and version control (git --version to verify).
-
 Web Browser: Chrome, Firefox, or Safari for testing.
 
 GitHub Account: For deployment on GitHub Pages.
